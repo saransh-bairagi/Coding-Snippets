@@ -1,7 +1,7 @@
+// For Minimum ------------------------------------------->
 class segmentTree {
 public:
 	vector<ll>seg;
-// For Minimum ------------------------------------------->
 	segmentTree(ll n) {
 		seg.resize(4 * n);
 	}
