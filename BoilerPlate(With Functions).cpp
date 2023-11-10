@@ -42,7 +42,7 @@ void sieve(){
 	memset(arr, true, sizeof arr);
 	arr[2] = true;
 	for (ll i = 2; i < sqrt(len); i++) {
-		for (ll j = 2 * i; j < len; j += i) {
+		for (ll j = i * i; j < len; j += i) {
 			arr[j] = false;
 		}
 	}
