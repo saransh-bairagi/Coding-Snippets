@@ -108,6 +108,22 @@ ll binaryexponentiation(ll x, ll b, ll modulo) {
 	}
 	return answer;
 }
+// This Function prints the binary representation of any number
+void bitrepresentation(ll n){
+	if(n==0){
+		cout<<0;
+		return;
+	}
+	stack<int>s;
+	while(n){
+		s.push(n&1);
+		n=(n>>1);
+	}
+	while(!s.empty()){
+		cout<<s.top()<<" ";
+		s.pop();
+	}
+}
 signed main() {
 	ios_base::sync_with_stdio(false);
 	cin.tie(NULL);
