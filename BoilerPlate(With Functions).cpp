@@ -13,7 +13,7 @@
 #define lowb(cont,key) lower_bound(cont.begin(),cont.end(),key)-cont.begin()//INCLUDED
 #define upb(cont,key) upper_bound(cont.begin(),cont.end(),key)-cont.begin()//NOT INCLUDED
 // GIVES NUMBER OF SET BITS IN X
-#define countset(x) __builtin_popcount(x)
+#define countset(x) __builtin_popcountl(x)
 using namespace std;
 const ll mod =1e9+7;
 const ll len=1000000;
