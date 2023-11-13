@@ -14,6 +14,12 @@
 #define upb(cont,key) upper_bound(cont.begin(),cont.end(),key)-cont.begin()//NOT INCLUDED
 // GIVES NUMBER OF SET BITS IN X
 #define countset(x) __builtin_popcountl(x)
+// trailing zeros count
+#define trzeros(x) __builtin_ctzl(x)
+// leading zeros count64bit()
+#define lezeros64(x) __builtin_clzll(x)
+// leading zeros count32bit()
+#define lezeros32(x) __builtin_clz(x)
 using namespace std;
 const ll mod =1e9+7;
 const ll len=1000000;
